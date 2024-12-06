@@ -1,0 +1,177 @@
+.projects-page {
+  min-height: 100vh;
+  background-color: yellowgreen;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e0eafc;
+  margin-bottom: 0.5rem;
+  margin-top: 50px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.projects-subtitle {
+  font-size: 1.2rem;
+  color: #cfd9df;
+  margin-bottom: 1.5rem;
+}
+
+.projects-search {
+  padding: 0.8rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  color: #333333;
+  text-align: center;
+  outline: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.projects-search:focus {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: #e0eafc;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #cfd9df;
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin: 0.2rem;
+  background-color: #2575fc;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.tech-tag.react {
+  background-color: #61dafb;
+}
+
+.tech-tag.js {
+  background-color: #f7df1e;
+}
+
+.tech-tag.node {
+  background-color: #8cc84b;
+}
+
+.tech-tag.mongo {
+  background-color: #47a248;
+}
+
+.tech-tag.css {
+  background-color: #2965f1;
+}
+
+.tech-tag.html {
+  background-color: #e34f26;
+}
+
+.tech-tag.java {
+  background-color: #b07219;
+}
+
+.tech-tag:hover {
+  opacity: 0.8;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  background-color: #056d81;
+  transition: background-color 0.3s ease;
+}
+
+.github-btn {
+  background-color: #4caf50;
+}
+
+.live-preview-btn {
+  background-color: #2575fc;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pop-in {
+  animation: popIn 0.6s ease-in-out;
+}
